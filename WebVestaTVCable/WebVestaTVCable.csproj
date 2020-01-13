@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.0</TargetFramework>
@@ -6,6 +6,100 @@
 
 
   <ItemGroup>
+    <Content Remove="wwwroot\js\main.js" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <None Include="wwwroot\AdminForms\assets\fonts\fa-solid-900.eot" />
+    <None Include="wwwroot\AdminForms\assets\fonts\fa-solid-900.svg" />
+    <None Include="wwwroot\AdminForms\assets\fonts\fa-solid-900.ttf" />
+    <None Include="wwwroot\AdminForms\assets\fonts\fa-solid-900.woff" />
+    <None Include="wwwroot\AdminForms\assets\fonts\fa-solid-900.woff2" />
+    <None Include="wwwroot\AdminForms\assets\fonts\Pe-icon-7-stroke.eot" />
+    <None Include="wwwroot\AdminForms\assets\fonts\Pe-icon-7-stroke.svg" />
+    <None Include="wwwroot\AdminForms\assets\fonts\Pe-icon-7-stroke.ttf" />
+    <None Include="wwwroot\AdminForms\assets\fonts\Pe-icon-7-stroke.woff" />
+    <None Include="wwwroot\AdminForms\assets\images\avatars\1.jpg" />
+    <None Include="wwwroot\AdminForms\assets\images\avatars\10.jpg" />
+    <None Include="wwwroot\AdminForms\assets\images\avatars\11.jpg" />
+    <None Include="wwwroot\AdminForms\assets\images\avatars\12.jpg" />
+    <None Include="wwwroot\AdminForms\assets\images\avatars\2.jpg" />
+    <None Include="wwwroot\AdminForms\assets\images\avatars\3.jpg" />
+    <None Include="wwwroot\AdminForms\assets\images\avatars\4.jpg" />
+    <None Include="wwwroot\AdminForms\assets\images\avatars\5.jpg" />
+    <None Include="wwwroot\AdminForms\assets\images\avatars\8.jpg" />
+    <None Include="wwwroot\AdminForms\assets\images\avatars\9.jpg" />
+    <None Include="wwwroot\AdminForms\assets\images\logo-inverse.png" />
+    <None Include="wwwroot\AdminForms\assets\images\logo.png" />
+    <None Include="wwwroot\AdminForms\assets\scripts\main.js" />
+    <None Include="wwwroot\AdminForms\charts-chartjs.html" />
+    <None Include="wwwroot\AdminForms\components-accordions.html" />
+    <None Include="wwwroot\AdminForms\components-calendar.html" />
+    <None Include="wwwroot\AdminForms\components-carousel.html" />
+    <None Include="wwwroot\AdminForms\components-maps.html" />
+    <None Include="wwwroot\AdminForms\components-modals.html" />
+    <None Include="wwwroot\AdminForms\components-notifications.html" />
+    <None Include="wwwroot\AdminForms\components-pagination.html" />
+    <None Include="wwwroot\AdminForms\components-progress-bar.html" />
+    <None Include="wwwroot\AdminForms\components-scrollable-elements.html" />
+    <None Include="wwwroot\AdminForms\components-tabs.html" />
+    <None Include="wwwroot\AdminForms\components-tooltips-popovers.html" />
+    <None Include="wwwroot\AdminForms\dashboard-boxes.html" />
+    <None Include="wwwroot\AdminForms\elements-badges-labels.html" />
+    <None Include="wwwroot\AdminForms\elements-buttons-standard.html" />
+    <None Include="wwwroot\AdminForms\elements-cards.html" />
+    <None Include="wwwroot\AdminForms\elements-dropdowns.html" />
+    <None Include="wwwroot\AdminForms\elements-icons.html" />
+    <None Include="wwwroot\AdminForms\elements-list-group.html" />
+    <None Include="wwwroot\AdminForms\elements-navigation.html" />
+    <None Include="wwwroot\AdminForms\elements-utilities.html" />
+    <None Include="wwwroot\AdminForms\forms-controls.html" />
+    <None Include="wwwroot\AdminForms\forms-layouts.html" />
+    <None Include="wwwroot\AdminForms\forms-validation.html" />
+    <None Include="wwwroot\AdminForms\index.html" />
+    <None Include="wwwroot\AdminForms\tables-regular.html" />
+    <None Include="wwwroot\assets\fonts\fa-solid-900.eot" />
+    <None Include="wwwroot\assets\fonts\fa-solid-900.svg" />
+    <None Include="wwwroot\assets\fonts\fa-solid-900.ttf" />
+    <None Include="wwwroot\assets\fonts\fa-solid-900.woff" />
+    <None Include="wwwroot\assets\fonts\fa-solid-900.woff2" />
+    <None Include="wwwroot\assets\fonts\Pe-icon-7-stroke.eot" />
+    <None Include="wwwroot\assets\fonts\Pe-icon-7-stroke.svg" />
+    <None Include="wwwroot\assets\fonts\Pe-icon-7-stroke.ttf" />
+    <None Include="wwwroot\assets\fonts\Pe-icon-7-stroke.woff" />
+    <None Include="wwwroot\assets\images\avatars\1.jpg" />
+    <None Include="wwwroot\assets\images\avatars\10.jpg" />
+    <None Include="wwwroot\assets\images\avatars\11.jpg" />
+    <None Include="wwwroot\assets\images\avatars\12.jpg" />
+    <None Include="wwwroot\assets\images\avatars\2.jpg" />
+    <None Include="wwwroot\assets\images\avatars\3.jpg" />
+    <None Include="wwwroot\assets\images\avatars\4.jpg" />
+    <None Include="wwwroot\assets\images\avatars\5.jpg" />
+    <None Include="wwwroot\assets\images\avatars\8.jpg" />
+    <None Include="wwwroot\assets\images\avatars\9.jpg" />
+    <None Include="wwwroot\assets\images\logo-inverse.png" />
+    <None Include="wwwroot\assets\images\logo.png" />
+    <None Include="wwwroot\assets\scripts\main.js" />
+    <None Include="wwwroot\js\main.js" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="3.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.0.0" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <Reference Include="VestaTV.Cabel.Core">
+      <HintPath>..\..\VestaTV.Cabel.DAL\VestaTV.Cabel.Core\bin\Debug\netstandard2.0\VestaTV.Cabel.Core.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
